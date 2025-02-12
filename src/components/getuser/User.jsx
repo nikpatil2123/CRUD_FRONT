@@ -20,7 +20,7 @@ const User = () => {
 
       try {
         // Fetch user data with Authorization header
-        const response = await axios.get("http://localhost:8000/api/getall", {
+        const response = await axios.get("https://crud-backend-r013.onrender.com/api/getall", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -54,7 +54,7 @@ const User = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:8000/api/delete/${userId}`, {
+      await axios.delete(`https://crud-backend-r013.onrender.com/api/delete/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
