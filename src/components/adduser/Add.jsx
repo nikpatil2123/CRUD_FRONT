@@ -38,7 +38,7 @@ const Add = () => {
     try {
       // Send POST request with Authorization header
       const response = await axios.post(
-        "http://localhost:8000/api/create",
+        "https://crud-backend-r013.onrender.com/api/create",
         user,
         {
           headers: {
